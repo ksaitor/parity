@@ -1,5 +1,7 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,800,900')
+mobilePhones = "(max-width: 768px), (max-device-width: 640px), (max-device-width: 667px), (max-width: 480px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)"
+// No CSS reset this time. Maybe next time.
 
 body, html
   font-family Titillium, sans-serif
@@ -11,7 +13,7 @@ body, html
 
 #app
   max-width 60em
-  margin 3em auto 5em
+  margin 5vw auto 10vw
 
   > div
     padding 0.1em 1em 2em
@@ -19,7 +21,8 @@ body, html
 
 div div
   margin-left 2em
-
+  @media mobilePhones
+    margin-left 0
 
 h2
   font-weight 800
@@ -41,21 +44,28 @@ span
   font-weight 700
   font-size 1.2em
 
-.array span
-  padding 0.5em 1em 0.3em
-  margin 0 0.5em
-  background rgba(255,255,255,0.1)
-  border-radius 3px
-  text-transform capitalize
-  display inline-block
-  transition background 0.3s linear
+.array
+  span
+    padding 0.5em 1em 0.3em
+    margin 0 0.5em 0.4em
+    background rgba(255,255,255,0.1)
+    border-radius 3px
+    text-transform capitalize
+    display inline-block
+    transition background 0.3s linear
 
-  &:nth-child(2)
-    margin-left 0
+    &:nth-child(2)
+      margin-left 0
 
-  &:hover
-    background rgba(255,255,255,0.5)
-    cursor default
+    &:hover
+      background rgba(255,255,255,0.5)
+      cursor default
+
+  @media mobilePhones
+    h2, h3, h4
+      display block
+    span
+      margin-left 0
 
 .from, .to, .min, .max
   display inline-block
@@ -82,6 +92,8 @@ span
     width 40%
     display inline-block
     vertical-align top
+    @media mobilePhones
+      width 50%
 
 .salary
   h3
