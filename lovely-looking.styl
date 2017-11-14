@@ -1,0 +1,92 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,800,900')
+
+body, html
+  font-family Titillium, sans-serif
+  color white
+  // Choose whichever background you'd like:
+  background-color #ee609c
+  background-image linear-gradient(to right, #fa709a 0%, #fee140 100%)
+  background-image linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)
+
+#app
+  max-width 60em
+  margin 3em auto 5em
+
+  > div
+    padding 0.1em 1em 2em
+    margin-left 0
+
+div div
+  margin-left 2em
+
+
+h2
+  font-weight 800
+
+h2, h3, h4
+  text-transform capitalize
+  margin-bottom 0
+
+h2, h3
+  min-width 14ch    // adding some alignment, so it's easier for the eye to parse
+
+h3, h4
+  font-weight 300
+  display inline-block
+  opacity 0.8
+  margin-right 1em
+
+span
+  font-weight 700
+  font-size 1.2em
+
+.array span
+  padding 0.5em 1em 0.3em
+  margin 0 0.5em
+  background rgba(255,255,255,0.1)
+  border-radius 3px
+  text-transform capitalize
+  display inline-block
+  transition background 0.3s linear
+
+  &:nth-child(2)
+    margin-left 0
+
+  &:hover
+    background rgba(255,255,255,0.5)
+    cursor default
+
+.from, .to, .min, .max
+  display inline-block
+  margin-left 0
+  margin-right 2em
+
+
+/* Section specific */
+.headline
+  h2
+    font-size 1em
+    margin-bottom 0
+    font-weight 200
+  span
+    font-size 2.3em
+    font-weight 900
+
+.technologies
+  h3, h4
+    min-width 25%
+
+.methodology, .profile, .technologies
+  > div
+    width 40%
+    display inline-block
+    vertical-align top
+
+.salary
+  h3
+    display block
+  div
+    width 30%
+    display inline-block
+
