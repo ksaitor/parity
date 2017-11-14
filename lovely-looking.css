@@ -1,0 +1,101 @@
+/* General styles */
+body, html {
+  font-family: Titillium, sans-serif;
+  color: white;
+  background-color: #ee609c;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+#app {
+  max-width: 60em;
+  margin: 3em auto 5em;
+}
+
+#app > div {
+  border-radius: 4px;
+  padding: 0.1em 1em 2em;
+  margin-left: 0;
+}
+
+div div {
+  margin-left: 2em;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h2, h3, h4 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+h2, h3 {
+  min-width: 14ch;
+}
+
+h3, h4 {
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: 300;
+}
+span {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.array span {
+  padding: 0.5em 1em 0.3em;
+  margin: 0 0.5em;
+  background: rgba(255,255,255,0.1);
+  /*color: #333;*/
+  border-radius: 3px;
+  text-transform: capitalize;
+  display: inline-block;
+  transition: background 0.3s linear;
+}
+.array span:nth-child(2) {
+  margin-left: 0;
+}
+.array span:hover {
+  background: rgba(255,255,255,0.5);
+  cursor: default;
+}
+
+/* Section specific */
+.headline h2 {
+  font-size: 1em;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+.headline span {
+  font-size: 2.3em;
+  font-weight: 900;
+}
+
+.technologies h3, .technologies h4 {
+  min-width: 25%;
+}
+
+.methodology div, .profile div, .technologies > div {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.salary h3 {
+  display: block;
+}
+
+.salary div {
+  width: 30%;
+  display: inline-block;
+}
+
+.from, .to, .min, .max {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 2em;
+}
